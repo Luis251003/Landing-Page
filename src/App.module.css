@@ -1,0 +1,28 @@
+.img__phone{
+    position: absolute;
+    top: -40px;
+    right: -60px;
+}
+.global__container{
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width:1200px){
+    .img__phone{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    .img__phone{
+        left: 0px;
+        right: 0px;
+        height: 480px;
+        margin: 0 auto;
+        display: block;
+    }
+    .global__container{
+        overflow: visible;
+    }
+}

@@ -1,0 +1,56 @@
+:root{
+    --dark-blue: hsl(233, 26%, 24%);
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyan: hsl(192, 70%, 51%);
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayish-blue: hsl(220, 16%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-primary: "Public Sans", sans-serif;;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+section{
+    padding: 6rem 0px;
+}
+
+h1,h2,h3{
+    color: var(--dark-blue);
+}
+
+h2{
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.content{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.button__primary{
+    background: linear-gradient(to right, var(--lime-green),var(--bright-cyan));
+    border: none;
+    color: white;
+    padding: .8rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: opacity ease-in-out .2s;
+    max-width: max-content;
+}
+.button__primary:hover{
+    opacity: .7;
+}
